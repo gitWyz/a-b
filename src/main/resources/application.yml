@@ -1,0 +1,32 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /user
+
+spring:
+  application:
+    name: user
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+    nacos:
+      discovery:
+        server-addr: http://192.168.225.1:8848/
+        namespace: 47bd7ca7-b98a-4a84-8eab-ed27542459d8
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.225.11:3306/user?characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: Wyz@2020
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+
+wyz:
+  security:
+    pwd-key: A8BCEFA5ABCEEB20A615BDCA9A7ABC2
+    tk-key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjx0bEfpRh
