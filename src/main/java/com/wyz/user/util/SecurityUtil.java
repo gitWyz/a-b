@@ -49,7 +49,7 @@ public class SecurityUtil {
       *  @param  userCode 用户唯一code
       *  @param  key token 秘钥
       *  @return  java.lang.String
-      *  @author weng xiaoyong
+      *  @author wangyz
       *  @date 2020/5/21 10:39
       *  @modified none
       */
@@ -88,7 +88,7 @@ public class SecurityUtil {
       *  @param  salt 盐
       *  @param  key 秘钥
       *  @return  java.lang.String
-      *  @author weng xiaoyong
+      *  @author wangyz
       *  @date 2020/5/21 10:20
       *  @modified none
       */
@@ -112,7 +112,7 @@ public class SecurityUtil {
       *  @param  source 加密源文本
       *  @param  key 加密秘钥
       *  @return  java.lang.String
-      *  @author weng xiaoyong
+      *  @author wangyz
       *  @date 2020/11/6 21:00
       *  @modified none
       */
