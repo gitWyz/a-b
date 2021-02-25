@@ -12,14 +12,14 @@ spring:
         enabled: true
     nacos:
       discovery:
-        server-addr: http://192.168.225.1:8848/
-        namespace: 47bd7ca7-b98a-4a84-8eab-ed27542459d8
+        server-addr: http://192.168.192.11:8848/
+        namespace: f4481c83-330e-4ea4-898c-f9578cfad6b8
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.225.11:3306/user?characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.192.11:3306/user?characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
     username: root
-    password: Wyz@2020
+    password: 123456
 
 mybatis:
   configuration:
